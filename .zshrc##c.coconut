@@ -1,0 +1,17 @@
+export PATH="$PATH:/opt/homebrew/bin"
+
+# goenv
+export GOENV_ROOT="$HOME/.goenv"
+export PATH="$GOENV_ROOT/bin:$PATH"
+eval "$(goenv init -)"
+export PATH="$GOROOT/bin:$PATH"
+export PATH="$PATH:$GOPATH/bin"
+
+# ocaml
+eval $(opam env --switch=default)
+
+# nodebrew
+export PATH=$HOME/.nodebrew/current/bin:$PATH
+
+# git
+alias g="git"
