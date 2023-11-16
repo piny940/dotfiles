@@ -1,0 +1,18 @@
+[credential "https://github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[user]
+	email = an.s.shoma@gmail.com
+	name = piny940
+[alias]
+	b = branch
+	cm = commit -m
+	swt = switch
+
+[init]
+	defaultBranch = main
+[push]
+	default = current
