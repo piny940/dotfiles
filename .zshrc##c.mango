@@ -1,0 +1,77 @@
+# Lines configured by zsh-newuser-install
+HISTFILE=~/.histfile
+HISTSIZE=100000
+SAVEHIST=100000
+bindkey -e
+# End of lines configured by zsh-newuser-install
+# The following lines were added by compinstall
+zstyle :compinstall filename '/home/ansai/.zshrc'
+
+autoload -Uz compinit
+compinit
+# End of lines added by compinstall
+
+# Shell Language
+# export LANG=en_US
+
+# git alias
+alias g='git'
+
+# Wheel speed
+if [ "$(ps aux | grep -c imwheel)" -le 1 ]; then
+  imwheel -b "4 5"
+fi
+
+# if google drive is not syncronized, syncronize it
+# if [ -z "$(ls ~/Documents/google-drive)" ]; then
+#   google-drive-ocamlfuse ~/Documents/google-drive
+# fi
+
+# nodebrew
+export PATH=$HOME/.nodebrew/current/bin:$PATH
+
+# for yarn's global packages
+export PATH="$PATH:`yarn global bin`"
+
+# rbenv
+eval "$(~/.rbenv/bin/rbenv init - zsh)"
+
+# fly ctl
+export FLYCTL_INSTALL="/home/ansai/.fly"
+export PATH="$FLYCTL_INSTALL/bin:$PATH"
+  
+# jenv
+export PATH="$HOME/.jenv/bin:$PATH"
+eval "$(jenv init -)"
+
+# ocaml
+eval $(opam env)
+
+# blender
+export PATH=$PATH:/usr/local/blender-3.3.1-linux-x64
+
+# starship
+eval "$(starship init zsh)"
+
+# goenv
+export PATH="$HOME/.goenv/bin:$PATH"
+eval "$(goenv init -)"
+export PATH="$GOROOT/bin:$PATH"
+export PATH="$PATH:$GOPATH/bin"
+
+# Quartus
+export PATH="$PATH:/home/ansai/intelFPGA_lite/20.1/quartus/bin"
+
+# rubocop
+alias rubocop='bundle exec rubocop -A'
+
+# android studio
+export PATH="$PATH:/usr/local/android-studio/bin"
+
+# rootless docker
+export PATH=/home/ansai/bin:$PATH
+export DOCKER_HOST=unix:///run/user/1000/docker.sock
+
+export PATH="/home/ansai/.local/bin:$PATH"
+
+
