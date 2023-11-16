@@ -1,4 +1,4 @@
-# right_format = "$all"
+right_format = "[($cmd_duration)]($style)"
 
 format = """
 [░▒▓](#a3aed2)\
@@ -21,12 +21,17 @@ $ruby\
 $rust\
 $time\
 [ ](fg:#1d2230)\
+$fill\
 \n\
 $username\
 [@](fg:#cbd6ff)\
 $hostname \
 $character"""
 
+[cmd_duration]
+min_time = 1
+style = 'fg:#e0af68'
+format = "[  ⏱ $duration]($style)"
 
 [directory]
 style = "fg:#e3e5e5 bg:#769ff0"
@@ -38,6 +43,10 @@ truncation_symbol = "…/"
 "Downloads" = " "
 "Music" = " "
 "Pictures" = " "
+
+[fill]
+symbol = '─'
+style = 'blue'
 
 [git_branch]
 symbol = ""
@@ -108,9 +117,8 @@ format = '[ $symbol ($version) ]($style)'
 
 [time]
 disabled = false
-time_format = "%R"                                      # Hour:Minute Format
-style = "fg:#769ff0 bg:#1d2230"
-format = '[[  $time ](fg:#a0a9cb bg:#1d2230)]($style)'
+style = "fg:#a0a9cb bg:#1d2230"
+format = '[  $time ]($style)'
 
 [username]
 style_root = "fg:#cbd6ff"
