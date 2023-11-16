@@ -2,16 +2,19 @@
 
 format = """
 [░▒▓](#a3aed2)\
-[  ](bg:#a3aed2 fg:#090c0c)\
+$os\
 [](bg:#769ff0 fg:#a3aed2)\
 $directory\
 [](fg:#769ff0 bg:#394260)\
 $git_branch\
 $git_status\
-[](fg:#394260 bg:#212736)\
+[](fg:#394260 bg:#212770)\
 [](fg:#212736 bg:#1d2230)\
-$time\
 $golang\
+$nodejs\
+$rust\
+$php\
+$time\
 [ ](fg:#1d2230)\
 \n$character"""
 
@@ -51,6 +54,14 @@ format = '[[ $symbol ($version) ](fg:#769ff0 bg:#212736)]($style)'
 symbol = ""
 style = "bg:#212736"
 format = '[[ $symbol ($version) ](fg:#769ff0 bg:#212736)]($style)'
+
+[os]
+format = "[ $symbol ](bg:#a3aed2 fg:#090c0c)"
+disabled = false
+[os.symbols]
+Macos = " "   #リンゴのicon
+Ubuntu = "🐧 "  #Ubuntuのicon
+Windows = " " #Windowsのicon
 
 [php]
 symbol = ""
