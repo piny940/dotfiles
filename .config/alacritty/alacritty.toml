@@ -35,3 +35,12 @@ blue = '0x7aa6da'
 magenta = '0xc397d8'
 cyan = '0x70c0ba'
 white = '0xffffff'
+
+[keyboard]
+bindings = [
+  { key = "v", mods = "Control", action = "Paste" },
+  { key = "n", mods = "Control", action = "SpawnNewInstance" },
+  { key = "w", mods = "Control", action = "Quit" },
+  { key = "c", mods = "Control", action = "Copy" },
+  { key = "c", mods = "Super", chars = "\u0003" },
+]
