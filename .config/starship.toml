@@ -65,8 +65,8 @@ format = '[ $symbol ($version) ]($style)'
 [hostname]
 ssh_only = false
 style = "fg:#cbd6ff"
-ssh_symbol = '🌐'
-format = '[$hostname $ssh_symbol]($style)'
+ssh_symbol = ' 🌐'
+format = '[$hostname$ssh_symbol]($style)'
 trim_at = '.companyname.com'
 disabled = false
 
