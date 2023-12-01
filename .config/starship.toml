@@ -19,6 +19,7 @@ $php\
 $python\
 $ruby\
 $rust\
+$conda\
 $time\
 [ ](fg:#1d2230)\
 $fill\
@@ -32,6 +33,12 @@ $character"""
 min_time = 1
 style = 'fg:#e0af68'
 format = "[  ⏱ $duration]($style)"
+
+[conda]
+style = "fg:#769ff0 bg:#212736"
+format = '[ $symbol$environment ]($style)'
+ignore_base = false
+disabled = false
 
 [directory]
 style = "fg:#e3e5e5 bg:#769ff0"
