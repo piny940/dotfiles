@@ -19,12 +19,13 @@ $php\
 $python\
 $ruby\
 $rust\
+$kubernetes\
 $conda\
 $time\
 [ ](fg:#1d2230)\
 $fill\
 \n\
-$username\
+$sudo$username\
 [@](fg:#cbd6ff)\
 $hostname \
 $character"""
@@ -122,6 +123,11 @@ format = '[ $symbol ($version) ]($style)'
 symbol = ""
 style = "fg:#769ff0 bg:#212736"
 format = '[ $symbol ($version) ]($style)'
+
+[sudo]
+symbol = "🛠️ "
+disabled = false
+format = '$symbol'
 
 [time]
 disabled = false
