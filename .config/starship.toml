@@ -54,7 +54,7 @@ truncation_symbol = "…/"
 
 [fill]
 symbol = '─'
-style = 'blue'
+style = 'fg:#2A7BDE'
 
 [git_branch]
 symbol = ""
