@@ -117,6 +117,7 @@ if ! shopt -oq posix; then
 fi
 
 export PATH=/home/ansai/bin:$PATH
-export DOCKER_HOST=unix:///run/user/1000/docker.sock
 eval "$(starship init bash)"
+
+. <(flux completion bash)
 
