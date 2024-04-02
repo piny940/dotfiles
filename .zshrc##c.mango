@@ -64,6 +64,7 @@ export PATH="$PATH:/home/ansai/intelFPGA_lite/20.1/quartus/bin"
 
 # rubocop
 alias rubocop='bundle exec rubocop -A'
+alias rspec='bundle exec rspec'
 
 # android studio
 export PATH="$PATH:/usr/local/android-studio/bin"
