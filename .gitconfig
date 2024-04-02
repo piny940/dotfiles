@@ -5,7 +5,7 @@
 	helper = 
 	helper = !/usr/bin/gh auth git-credential
 [user]
-	email = an.s.shoma@gmail.com
+	email = 83708535+piny940@users.noreply.github.com
 	name = piny940
 [alias]
 	b = branch
