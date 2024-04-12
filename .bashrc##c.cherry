@@ -121,3 +121,5 @@ eval "$(starship init bash)"
 
 . <(flux completion bash)
 
+alias k='kubectl'
+
