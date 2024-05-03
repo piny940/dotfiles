@@ -13,3 +13,9 @@ alias g='git'
 alias k='kubectl'
 . <(flux completion bash)
 {% endif %}
+
+# ruby alias
+alias rubocop='bundle exec rubocop -A'
+alias rspec='bundle exec rspec'
+alias b='bundle exec'
+

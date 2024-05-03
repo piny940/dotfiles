@@ -13,9 +13,6 @@ eval $(opam env --switch=default)
 # nodebrew
 export PATH=$HOME/.nodebrew/current/bin:$PATH
 
-# starship
-eval "$(starship init zsh)"
-
 # postgres
 export PATH="/opt/homebrew/opt/postgresql@16/bin:$PATH"
 export LDFLAGS="-L/opt/homebrew/opt/postgresql@16/lib"

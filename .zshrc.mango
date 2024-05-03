@@ -46,9 +46,6 @@ eval $(opam env)
 # blender
 export PATH=$PATH:/usr/local/blender-3.3.1-linux-x64
 
-# starship
-eval "$(starship init zsh)"
-
 # goenv
 export PATH="$HOME/.goenv/bin:$PATH"
 eval "$(goenv init -)"
@@ -57,10 +54,6 @@ export PATH="$PATH:$GOPATH/bin"
 
 # Quartus
 export PATH="$PATH:/home/ansai/intelFPGA_lite/20.1/quartus/bin"
-
-# rubocop
-alias rubocop='bundle exec rubocop -A'
-alias rspec='bundle exec rspec'
 
 # android studio
 export PATH="$PATH:/usr/local/android-studio/bin"
