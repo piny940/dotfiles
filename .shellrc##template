@@ -1,0 +1,15 @@
+HISTSIZE=10000000
+SAVEHIST=10000000
+HISTFILESIZE=10000000
+
+# Starship
+eval "$(starship init bash)"
+
+# git alias
+alias g='git'
+{% if yadm.class == 'k8s' %}
+
+# k8s
+alias k='kubectl'
+. <(flux completion bash)
+{% endif %}
