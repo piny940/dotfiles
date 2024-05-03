@@ -7,7 +7,7 @@ eval "$(starship init bash)"
 
 # git alias
 alias g='git'
-{% if yadm.class == 'k8s' %}
+{% if yadm.class == "k8s" %}
 
 # k8s
 alias k='kubectl'
