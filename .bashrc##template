@@ -1,2 +1,6 @@
 {% include .shellrc %}
 {% include .bashrc.default %}
+
+# Starship
+eval "$(starship init bash)"
+

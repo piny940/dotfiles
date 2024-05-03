@@ -7,3 +7,6 @@
 {% include ".zshrc.coconut" %}
 {% endif %}
 
+
+# Starship
+eval "$(starship init zsh)"
