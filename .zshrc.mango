@@ -1,7 +1,6 @@
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
-HISTSIZE=100000
-SAVEHIST=100000
+
 bindkey -e
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
@@ -13,9 +12,6 @@ compinit
 
 # Shell Language
 # export LANG=en_US
-
-# git alias
-alias g='git'
 
 # Wheel speed
 if [ "$(ps aux | grep -c imwheel)" -le 1 ]; then

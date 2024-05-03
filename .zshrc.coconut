@@ -1,6 +1,3 @@
-HISTSIZE=10000000
-SAVEHIST=10000000
-
 export PATH="$PATH:/opt/homebrew/bin"
 
 # goenv
@@ -15,9 +12,6 @@ eval $(opam env --switch=default)
 
 # nodebrew
 export PATH=$HOME/.nodebrew/current/bin:$PATH
-
-# git
-alias g="git"
 
 # starship
 eval "$(starship init zsh)"

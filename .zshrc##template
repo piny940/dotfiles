@@ -1,0 +1,8 @@
+{% if yadm.class == "mango" %}
+{% include ".zshrc.mango" %}
+{% endif %}
+
+{% if yadm.class == "coconut" %}
+{% include ".zshrc.coconut" %}
+{% endif %}
+
