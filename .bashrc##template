@@ -4,3 +4,5 @@
 # Starship
 eval "$(starship init bash)"
 
+# fzf (ctrl R for history search)
+eval "$(fzf --bash)"
