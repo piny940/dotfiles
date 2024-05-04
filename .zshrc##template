@@ -2,11 +2,12 @@
 {% if yadm.class == "mango" %}
 {% include ".zshrc.mango" %}
 {% endif %}
-
 {% if yadm.class == "coconut" %}
 {% include ".zshrc.coconut" %}
 {% endif %}
-
+{% if yadm.class == "chestnut" %}
+{% include ".zshrc.chestnut" %}
+{% endif %}
 
 # Starship
 eval "$(starship init zsh)"
