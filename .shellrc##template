@@ -15,9 +15,10 @@ alias k='kubectl'
 alias rubocop='bundle exec rubocop -A'
 alias rspec='bundle exec rspec'
 alias b='bundle exec'
-{% if yadm.class == "lemon" %}
+{% if yadm.class == "docker" %}
 
-# lemon
+# rootless docker
 export PATH=/home/ansai/bin:$PATH
 export DOCKER_HOST=unix:///run/user/1001/docker.sock
 {% endif %}
+
