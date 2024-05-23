@@ -1,0 +1,14 @@
+# Setup fzf
+# ---------
+{% if yadm.class == "coconut" %}
+if [[ ! "$PATH" == */Users/ansai/.fzf/bin* ]]; then
+  PATH="${PATH:+${PATH}:}/Users/ansai/.fzf/bin"
+fi
+{% else %}
+if [[ ! "$PATH" == */home/ansai/.fzf/bin* ]]; then
+  PATH="${PATH:+${PATH}:}/home/ansai/.fzf/bin"
+fi
+{% endif %}
+
+eval "$(fzf --zsh)"
+
