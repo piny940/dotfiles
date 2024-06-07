@@ -1,0 +1,26 @@
+/* @theme custom */
+
+@import "default";
+
+section {
+  font-family: "Noto Sans JP, sans-serif";
+  background: url("./themes/background.png");
+  background-size: cover;
+  padding-left: 100px;
+  padding-right: 250px;
+}
+section::after {
+  padding-bottom: 15px;
+  padding-right: 15px;
+  color: rgb(94, 94, 94);
+}
+section.title {
+  padding-left: 130px;
+}
+section.title h1 {
+  font-size: 3em;
+  padding-bottom: 0;
+}
+section.title h2 {
+  margin-top: 0;
+}
