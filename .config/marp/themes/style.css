@@ -3,6 +3,7 @@
 @import "default";
 
 section {
+  position: relative;
   font-family: "Noto Sans JP, sans-serif";
   background: url("https://github.com/piny940/dotfiles/blob/main/.config/marp/themes/background.png?raw=true");
   background-size: cover;
