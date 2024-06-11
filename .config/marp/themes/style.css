@@ -4,7 +4,6 @@
 
 section {
   position: relative;
-  font-family: "MS　Pゴシック";
   background: url("https://github.com/piny940/dotfiles/blob/main/.config/marp/themes/background.png?raw=true");
   background-size: cover;
   padding-left: 100px;
