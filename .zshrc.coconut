@@ -37,3 +37,8 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
+
+# ngrok
+if command -v ngrok &>/dev/null; then
+    eval "$(ngrok completion)"
+fi
