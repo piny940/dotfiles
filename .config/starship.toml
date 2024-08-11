@@ -96,9 +96,9 @@ style = "bg:#a3aed2 fg:#090c0c"
 format = "[ $symbol ]($style)"
 disabled = false
 [os.symbols]
-Macos = " "   #リンゴのicon
-Ubuntu = "🐧 "  #Ubuntuのicon
-Windows = " " #Windowsのicon
+Macos = ""   #リンゴのicon
+Ubuntu = "🐧"  #Ubuntuのicon
+Windows = "" #Windowsのicon
 
 [ocaml]
 style = "fg:#769ff0 bg:#212736"
@@ -113,6 +113,7 @@ format = '[ $symbol ($version) ]($style)'
 symbol = ""
 style = "fg:#769ff0 bg:#212736"
 format = '[ $symbol ($version) ]($style)'
+pyenv_version_name = true
 
 [ruby]
 symbol = ''
@@ -124,6 +125,11 @@ symbol = ""
 style = "fg:#769ff0 bg:#212736"
 format = '[ $symbol ($version) ]($style)'
 
+[shell]
+style = "bg:#a3aed2 fg:#090c0c"
+format = "[ $indicator ]($style)"
+disabled = false
+
 [sudo]
 symbol = "🛠️ "
 disabled = false
@@ -133,6 +139,10 @@ format = '$symbol'
 disabled = false
 style = "fg:#a0a9cb bg:#1d2230"
 format = '[  $time ]($style)'
+
+[terraform]
+style = "fg:#769ff0 bg:#212736"
+format = '[$symbol $version$workspace]($style) '
 
 [username]
 style_root = "fg:#cbd6ff"
