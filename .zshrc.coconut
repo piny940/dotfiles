@@ -14,10 +14,10 @@ eval $(opam env --switch=default)
 export PATH=$HOME/.nodebrew/current/bin:$PATH
 
 # postgres
-export PATH="/opt/homebrew/opt/postgresql@14/bin:$PATH"
-export LDFLAGS="-L/opt/homebrew/opt/postgresql@14/lib"
-export CPPFLAGS="-I/opt/homebrew/opt/postgresql@14/include"
-export PKG_CONFIG_PATH="/opt/homebrew/opt/postgresql@14/lib/pkgconfig"
+export PATH="/opt/homebrew/opt/postgresql@16/bin:$PATH"
+export LDFLAGS="-L/opt/homebrew/opt/postgresql@16/lib"
+export CPPFLAGS="-I/opt/homebrew/opt/postgresql@16/include"
+export PKG_CONFIG_PATH="/opt/homebrew/opt/postgresql@16/lib/pkgconfig"
 
 # rbenv
 eval "$(rbenv init - zsh)"
