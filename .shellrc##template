@@ -22,3 +22,6 @@ export PATH=/home/ansai/bin:$PATH
 export DOCKER_HOST=unix:///run/user/1001/docker.sock
 {% endif %}
 
+# go private repository
+export GOPRIVATE='github.com/piny940/*'
+
