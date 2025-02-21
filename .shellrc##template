@@ -9,6 +9,7 @@ alias g='git'
 # k8s
 alias k='kubectl'
 . <(flux completion bash)
+. <(velero completion bash)
 {% endif %}
 
 # ruby alias
