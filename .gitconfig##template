@@ -7,7 +7,12 @@
 [user]
 	email = 83708535+piny940@users.noreply.github.com
 	name = piny940
+{% if yadm.class == "mango" %}
 	signingKey = DC127FFC0247B052
+{% endif %}
+{% if yadm.class == "coconut" %}
+	signingKey = 2B2512FE33D129C88450C031D46BB9135392F43A
+{% endif %}
 [alias]
 	b = branch
 	p = push
