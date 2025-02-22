@@ -7,6 +7,7 @@
 [user]
 	email = 83708535+piny940@users.noreply.github.com
 	name = piny940
+	signingKey = DC127FFC0247B052
 [alias]
 	b = branch
 	p = push
@@ -28,4 +29,8 @@
 
 [url "ssh://git@github.com/"]
 	insteadOf = https://github.com/
+[commit]
+	gpgsign = true
+[tag]
+	gpgSign = true
 

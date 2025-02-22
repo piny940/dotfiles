@@ -93,4 +93,7 @@ export PATH=$PATH:$HOME/go/bin
 # k0sctl
 . <(k0sctl completion)
 
+# git gpg key
+export GPG_TTY=$(tty)
+
 
