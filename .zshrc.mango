@@ -90,3 +90,7 @@ eval "$(pyenv init --path)"
 export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:$HOME/go/bin
 
+# k0sctl
+. <(k0sctl completion)
+
+
