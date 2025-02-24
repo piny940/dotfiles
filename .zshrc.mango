@@ -27,7 +27,7 @@ fi
 export PATH=$HOME/.nodebrew/current/bin:$PATH
 
 # for yarn's global packages
-export PATH="$PATH:`yarn global bin`"
+# export PATH="$PATH:`yarn global bin`"
 
 # rbenv
 eval "$(~/.rbenv/bin/rbenv init - zsh)"
