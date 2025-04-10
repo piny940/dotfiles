@@ -96,4 +96,8 @@ export PATH=$PATH:$HOME/go/bin
 # git gpg key
 export GPG_TTY=$(tty)
 
+# direnv
+eval "$(direnv hook zsh)"
+
+
 
