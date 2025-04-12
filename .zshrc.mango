@@ -99,5 +99,7 @@ export GPG_TTY=$(tty)
 # direnv
 eval "$(direnv hook zsh)"
 
+# kubernetes
+alias k='kubectl'
 
 
