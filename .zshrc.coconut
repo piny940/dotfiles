@@ -28,4 +28,7 @@ export PATH="${AQUA_ROOT_DIR:-${XDG_DATA_HOME:-$HOME/.local/share}/aquaproj-aqua
 # git gpg key
 export GPG_TTY=$(tty)
 
+# cmake
+PATH="/Applications/CMake.app/Contents/bin":"$PATH"
+
 
