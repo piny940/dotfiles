@@ -24,3 +24,18 @@ section.title h1 {
 section.title h2 {
   margin-top: 0;
 }
+
+section.side {
+  display: flex;
+  justify-content: space-between;
+}
+
+section.eyecatch {
+  display: flex;
+  background-color: rgb(56, 142, 199);
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  font-size: 70px;
+}
