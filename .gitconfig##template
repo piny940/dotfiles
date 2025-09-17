@@ -35,8 +35,17 @@
 
 [url "ssh://git@github.com/"]
 	insteadOf = https://github.com/
+
+{% if yadm.class == "mango" %}
 [commit]
 	gpgsign = true
 [tag]
 	gpgSign = true
+{% endif %}
+{% if yadm.class == "coconut" %}
+[commit]
+	gpgsign = true
+[tag]
+	gpgSign = true
+{% endif %}
 
