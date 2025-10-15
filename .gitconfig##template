@@ -29,6 +29,8 @@
 	defaultBranch = main
 [push]
 	default = current
+[pull]
+	rebase = true
 
 [submodule]
 	recurse = true
