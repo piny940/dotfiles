@@ -50,4 +50,6 @@
 [tag]
 	gpgSign = true
 {% endif %}
+[core]
+	editor = vim
 
