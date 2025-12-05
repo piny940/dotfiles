@@ -35,20 +35,21 @@
 [submodule]
 	recurse = true
 
-[url "ssh://git@github.com/"]
-	insteadOf = https://github.com/
-
 {% if yadm.class == "mango" %}
 [commit]
 	gpgsign = true
 [tag]
 	gpgSign = true
+[url "ssh://git@github.com/"]
+	insteadOf = https://github.com/
 {% endif %}
 {% if yadm.class == "coconut" %}
 [commit]
 	gpgsign = true
 [tag]
 	gpgSign = true
+[url "ssh://git@github.com/"]
+	insteadOf = https://github.com/
 {% endif %}
 [core]
 	editor = vim
