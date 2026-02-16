@@ -26,3 +26,5 @@ export DOCKER_HOST=unix:///run/user/1001/docker.sock
 # go private repository
 export GOPRIVATE='github.com/piny940/*'
 
+export PATH=$PATH:$HOME/.local/bin
+
