@@ -27,4 +27,6 @@ export GPG_TTY=$(tty)
 # cmake
 PATH="/Applications/CMake.app/Contents/bin":"$PATH"
 
+# kubectl
+alias k='kubectl'
 
