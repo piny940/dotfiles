@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": ["WebSearch"]
+  },
+  "model": "opus[1m]",
+  "hooks": {
+    "PostToolUseFailure": [
+      {
+        "matcher": "Bash|Edit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "printf '%s' '{\"systemMessage\":\"操作が失敗しました。\",\"hookSpecificOutput\":{\"hookEventName\":\"PostToolUseFailure\",\"additionalContext\":\"Tool failed. Stop and call EnterPlanMode to replan.\"}}'"
+          }
+        ]
+      }
+    ]
+  }
+}
