@@ -3,20 +3,14 @@ export PATH="$PATH:/opt/homebrew/bin"
 # ocaml
 eval $(opam env --switch=default)
 
-# nodebrew
-export PATH=$HOME/.nodebrew/current/bin:$PATH
-
 # postgres
 export PATH="/opt/homebrew/opt/postgresql@16/bin:$PATH"
 export LDFLAGS="-L/opt/homebrew/opt/postgresql@16/lib"
 export CPPFLAGS="-I/opt/homebrew/opt/postgresql@16/include"
 export PKG_CONFIG_PATH="/opt/homebrew/opt/postgresql@16/lib/pkgconfig"
 
-# rbenv
-eval "$(rbenv init - zsh)"
-
-# pyenv
-eval "$(pyenv init -)"
+# anyenv
+eval "$(anyenv init -)"
 
 # git gpg key
 export GPG_TTY=$(tty)
