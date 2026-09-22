@@ -1,6 +1,8 @@
 {
   "permissions": {
-    "allow": ["WebSearch"]
+    "allow": [
+      "WebSearch"
+    ]
   },
   "model": "opus[1m]",
   "hooks": {
@@ -10,7 +12,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "printf '%s' '{\"systemMessage\":\"操作が失敗しました。\",\"hookSpecificOutput\":{\"hookEventName\":\"PostToolUseFailure\",\"additionalContext\":\"Tool failed. Stop and call EnterPlanMode to replan.\"}}'"
+            "command": "printf '%s' '{\"continue\":false,\"stopReason\":\"ツール呼び出しが失敗したため作業を停止しました。再開すると原因説明と再計画を行います。\",\"systemMessage\":\"⛔ ツール失敗 — 停止。再開時に再計画します。\",\"hookSpecificOutput\":{\"hookEventName\":\"PostToolUseFailure\",\"continue\":false,\"additionalContext\":\"STOP. PostToolUseFailure フックが今回のターンを強制停止した。何がどう失敗したかは直前のツール結果に出ている。\\n同じ呼び出しをリトライしてはならない。回避策で先に進んではならない。別のタスクに移ってはならない。\\n次のターンでは必ず以下の順に実行すること:\\n1. どのコマンド／ファイルがどう失敗したのかを日本語で説明する。\\n2. 根本原因と、それが現在の計画のどの前提を壊したのかを述べる。\\n3. EnterPlanMode を呼ぶ。\\n4. 読み取り専用ツールで根本原因が確定するまで再調査する。推測で進めてはならない。\\n5. 計画ファイルを書き直す: 何が変わったか / 新しい方針 / どう検証するか。\\n6. ExitPlanMode を呼び、承認を待つ。承認前に作業を再開してはならない。\"}}'"
           }
         ]
       }
