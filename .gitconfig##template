@@ -34,9 +34,6 @@
 [pull]
 	rebase = true
 
-[submodule]
-	recurse = true
-
 {% if yadm.class == "mango" %}
 [commit]
 	gpgsign = true
