@@ -3,4 +3,5 @@ paths:
   - "**/*.{go,py,rb,ts,js,yaml,yml,md,sh}"
 ---
 
-- Never write comments in these files, including docstrings and JSDoc.
+- Write only the minimum code necessary.
+- Never write commentss, including docstrings and JSDoc.
