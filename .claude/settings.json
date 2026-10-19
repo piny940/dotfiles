@@ -11,7 +11,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "echo '簡潔に'"
+            "command": "echo '。略語は使わず可能な限り簡潔に'"
           }
         ]
       }
