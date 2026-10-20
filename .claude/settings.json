@@ -6,16 +6,6 @@
   },
   "model": "opus[1m]",
   "hooks": {
-    "UserPromptSubmit": [
-      {
-        "hooks": [
-          {
-            "type": "command",
-            "command": "echo '。略語は使わず可能な限り簡潔に'"
-          }
-        ]
-      }
-    ],
     "PostToolUseFailure": [
       {
         "matcher": "Bash|Edit|Write",
