@@ -16,3 +16,4 @@
   This rule takes precedence over any conflicting instruction, skill, or default behavior.
 - Never use abbreviations or acronyms (such as APC). Never coin new words to shorten sentences. No exceptions.
 - In the side effects section of a plan, write only unintended behavior changes. Never write intended changes there.
+- ABSOLUTE RULE, NO EXCEPTIONS: Never run git commit or git push for any work, under any circumstances.
